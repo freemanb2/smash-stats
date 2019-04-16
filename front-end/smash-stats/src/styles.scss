@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  padding: 5px;
+  background: url("assets/backgrounds/fd.png") no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.nav-sidebar {
+  position: fixed;
+}
+
+.mat-form-field-infix {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px !important;
+}

@@ -1,0 +1,16 @@
+.registrationForm {
+  position: absolute;
+    top: 13%;
+    display: block;
+    width: 70%;
+    left: 15%;
+    border-radius: 10px;
+    background: white;
+  input {
+    min-width: 200px;
+    max-width: 500px;
+  }
+  .mat-form-field-infix{
+    width: 5000px !important;
+  }
+}

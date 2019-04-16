@@ -1,0 +1,13 @@
+<div class="recent-sets">
+  <div class="sets-title">
+    <h2>Recent Sets</h2>
+  </div>
+  <app-tournament *ngFor="let tournament of tournaments" [name]="tournament">
+    <div *ngFor="let set of recentSets">
+      <ng-template [ngIf]="set.event.tournament.name == tournament && set.displayScore != 'Bye'">
+        <app-set [setStats]="set">
+        </app-set>
+      </ng-template>
+    </div>
+  </app-tournament>
+</div>
