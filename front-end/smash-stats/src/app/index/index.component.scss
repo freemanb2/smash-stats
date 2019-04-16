@@ -1,8 +1,16 @@
 .search-div {
   text-align: center;
-  margin-top: 14%;
+  margin-top: 12%;
+  .search-box {
+    width: 40%;
+    padding: 10px;
+    background-color: rgba(70,70,70,.8);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #searchbar {
-    width: 50%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     height: 50px;
