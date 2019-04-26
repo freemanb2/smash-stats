@@ -17,7 +17,6 @@ export class SetComponent implements OnInit {
   @Input()
   set setStats(setStats: JSON) {
     this._setStats = setStats;
-    console.log(setStats);
     this._results = setStats['displayScore'];
   }
 
@@ -26,8 +25,6 @@ export class SetComponent implements OnInit {
   }
 
   get results(): string {
-    console.log("getting results");
-    console.log(this._results);
     return this._results;
   }
 

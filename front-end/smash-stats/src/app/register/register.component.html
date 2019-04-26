@@ -1,10 +1,15 @@
 
 <form class="registrationForm">
+  <h1>Register</h1>
   <mat-form-field>
-    <input matInput placeholder="email" value="example@email.com">
+    <input matInput placeholder="email">
   </mat-form-field>
   <br>
   <mat-form-field>
-    <input matInput placeholder="password" value="password">
+    <input matInput type="password" placeholder="password">
   </mat-form-field>
+  <mat-form-field>
+    <input matInput  placeholder="Smash.gg Account ID">
+  </mat-form-field>
+  <button mat-button (click)="authService.register()">Submit</button>
 </form>
