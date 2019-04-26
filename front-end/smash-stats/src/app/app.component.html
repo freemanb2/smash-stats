@@ -4,6 +4,11 @@
 </div>
 </a>
 <div class="main-wrapper">
+  <nav class="navbar navbar-default">
+      <div *ngIf="!authService.isAuthenticated()" (click)="authService.login()">Log In</div>
+      <div (click)="authService.logout()" *ngIf="authService.isAuthenticated()">Log Out</div>
+      <div *ngIf="authService.isAuthenticated()" (click)="myStats()">My Stats</div>
+    </nav>
   <div class="content-wrapper">
     <router-outlet></router-outlet>
   </div>

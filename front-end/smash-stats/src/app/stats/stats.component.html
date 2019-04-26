@@ -1,3 +1,7 @@
+<div class="name-card">
+  <h2>{{gamertag}}</h2>
+</div>
+
 <div class="recent-sets">
   <div class="sets-title">
     <h2>Recent Sets</h2>
@@ -10,4 +14,17 @@
       </ng-template>
     </div>
   </app-tournament>
+</div>
+
+<div class="head-to-head">
+  <div class="sets-title">
+    <h2>Head-to-Head</h2>
+  </div>
+  <div class="head-to-head-opponents">
+    <div *ngFor="let opponent of scores | keyvalue" class="opponent">
+      <h3>vs. {{opponent.key}}</h3>
+      <span>{{opponent.value[0]}} - {{opponent.value[1]}}</span>
+      <hr>
+    </div>
+  </div>
 </div>
